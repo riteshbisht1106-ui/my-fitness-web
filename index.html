@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness with Ritesh - Master Calisthenics</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="px-4 md:px-8 py-4">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <div class="text-2xl font-bold">
+                <span
+                    style="background: linear-gradient(135deg, var(--accent-orange), var(--accent-green)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Ritesh</span>
+            </div>
+            <div class="flex gap-6 md:gap-10 text-sm md:text-base flex-wrap justify-end">
+                <a href="#home" class="hover:text-orange-500">Home</a>
+                <a href="#skills" class="hover:text-orange-500">Skills</a>
+                <a href="#about" class="hover:text-orange-500">Journey</a>
+                <a href="#programs" class="hover:text-orange-500">Programs</a>
+                <a href="#gallery" class="hover:text-orange-500">Gallery</a>
+                <a href="#contact" class="hover:text-orange-500">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <h1>Master Calisthenics<br><span class="accent-text">Master Yourself</span></h1>
+            <p>From zero to advanced skills in 1 year. Learn handstand, muscle up, front lever & straddle planche.</p>
+
+            
+
+            <!-- Social Media Links - Neon Style -->
+            <div class="hero-social-neon">
+                <a href="https://www.instagram.com/ritesh.b_?igsh=eml3bDhnd2pqbXF3" target="_blank" title="Instagram"
+                    class="social-icon-neon instagram">
+                    <span class="icon-wrapper">
+                        <i class="fab fa-instagram"></i>
+                    </span>
+                    <span class="social-label">Instagram</span>
+                </a>
+                <a href="https://youtube.com/@ritesh.bisht19?si=P-TqPFrUa6zXEaS3" target="_blank" title="YouTube"
+                    class="social-icon-neon youtube">
+                    <span class="icon-wrapper">
+                        <i class="fab fa-youtube"></i>
+                    </span>
+                    <span class="social-label">YouTube</span>
+                </a>
+                <a href="https://x.com/RiteshBisht2066" target="_blank" title="X (Twitter)"
+                    class="social-icon-neon twitter">
+                    <span class="icon-wrapper">
+                        <i class="fab fa-x-twitter"></i>
+                    </span>
+                    <span class="social-label">X</span>
+                </a>
+                <a href="mailto:riteshbisht1106@gmail.com" title="Email" class="social-icon-neon email">
+                    <span class="icon-wrapper">
+                        <i class="fas fa-envelope"></i>
+                    </span>
+                    <span class="social-label">Contact</span>
+                </a>
+            </div>
+
+            <div class="cta-buttons">
+                <a href="#programs" class="cta-btn cta-btn-primary">
+                    🎯 View Courses
+                </a>
+                <a href="#about" class="cta-btn cta-btn-secondary">
+                    📈 My Journey
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2 class="section-title">Skills Unlocked</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="skill-image"
+                    style="background: linear-gradient(135deg, rgba(255, 107, 53, 0.2) 0%, rgba(0, 255, 136, 0.05) 100%);">
+                    <img src="fitness2.0.jpeg" alt="Handstand" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="skill-content">
+                    <h3>💪 Handstand</h3>
+                    <p>Perfect balance and core strength. The foundation of advanced calisthenics.</p>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-image"
+                    style="background: linear-gradient(135deg, rgba(255, 107, 53, 0.2) 0%, rgba(0, 255, 136, 0.05) 100%);">
+                    <img src="fitness1.0.jpeg" alt="Muscle Up" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="skill-content">
+                    <h3>🔥 Planche</h3>
+                    <p>One of the advanced calisthenics skills. Require full body strength and balance.</p>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-image"
+                    style="background: linear-gradient(135deg, rgba(255, 107, 53, 0.2) 0%, rgba(0, 255, 136, 0.05) 100%);">
+                    <img src="fitness2.0.jpeg" alt="Front Lever" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="skill-content">
+                    <h3>⚡ Handstand Pushup </h3>
+                    <p>Push your limits. Build incredible shoulder and arm strength.</p>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <h2 class="section-title">Physique achieved</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="physique-image"
+                    style="background: linear-gradient(135deg, rgba(255, 107, 53, 0.2) 0%, rgba(0, 255, 136, 0.05) 100%);">
+                    <img src="fitness5.jpeg" alt="Physique 1" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="skill-content">
+                    <h3>🌟 Chest and bicep training</h3>
+                    <p>Built a chest and huge biceps only with bodyweight training </p>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="physique-image"
+                    style="background: linear-gradient(135deg, rgba(255, 107, 53, 0.2) 0%, rgba(0, 255, 136, 0.05) 100%);">
+                    <img src="fitness4.jpeg" alt="Physique 2" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="skill-content">
+                    <h3>🎯 Back the sexiest part </h3>
+                    <p>build a strong wall like this beacuse sometimes strengths feels from the back .</p>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="physique-image"
+                    style="background: linear-gradient(135deg, rgba(255, 107, 53, 0.2) 0%, rgba(0, 255, 136, 0.05) 100%);">
+                    <img src="fitness7.jpeg" alt="Physique 3" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="skill-content">
+                    <h3>💯 Dedication</h3>
+                    <p>Consistency and hard work. The real secret behind all achievements.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- My Calisthenics Journey Section (Combined) -->
+    <section id="about" class="bg-gray-950">
+        <h2 class="section-title">My Calisthenics Journey</h2>
+
+        <!-- Stats Sub-section -->
+        <div class="stats-grid" style="margin-bottom: 4rem;">
+            <div class="stat-card">
+                <div class="stat-number">1+</div>
+                <div class="stat-label">Year of Calisthenics</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">5+</div>
+                <div class="stat-label">Advanced Skills Unlocked</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">3500+</div>
+                <div class="stat-label">Instagram Followers</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">350+</div>
+                <div class="stat-label">YouTube Subscribers</div>
+            </div>
+        </div>
+
+        <!-- Timeline Sub-section -->
+        <div class="max-w-3xl mx-auto">
+            <p style="color: rgba(232, 232, 232, 0.8); margin-bottom: 3rem; line-height: 1.8; font-size: 1.1rem;">
+                One year ago, I started with a simple dream: to master bodyweight exercises and unlock advanced
+                calisthenics skills. What began as basic push-ups transformed into an incredible journey of discipline,
+                consistency, and pure determination. Every skill unlocked is proof that with the right approach and
+                mindset, anything is possible.
+            </p>
+
+            <div style="position: relative; padding: 0 20px;">
+                <!-- Timeline -->
+                <div style="border-left: 3px solid var(--accent-orange); padding-left: 30px;">
+                    <!-- Month 1-2 -->
+                    <div
+                        style="margin-bottom: 40px; padding-bottom: 20px; border-bottom: 1px solid rgba(255, 107, 53, 0.2);">
+                        <time style="color: var(--accent-orange); font-weight: 600;">Month 1-2</time>
+                        <h4 style="font-size: 1.3rem; color: var(--text-light); margin-top: 10px; margin-bottom: 8px;">
+                            The Beginning</h4>
+                        <p style="color: rgba(232, 232, 232, 0.7);">Started with basic push-ups, pull-ups, and dips.
+                            Built foundational strength and body awareness.</p>
+                    </div>
+
+                    <!-- Month 3-4 -->
+                    <div
+                        style="margin-bottom: 40px; padding-bottom: 20px; border-bottom: 1px solid rgba(255, 107, 53, 0.2);">
+                        <time style="color: var(--accent-orange); font-weight: 600;">Month 3-4</time>
+                        <h4 style="font-size: 1.3rem; color: var(--text-light); margin-top: 10px; margin-bottom: 8px;">
+                            First Milestone: Handstand</h4>
+                        <p style="color: rgba(232, 232, 232, 0.7);">First time holding a handstand for 5 seconds! Worked
+                            on balance, shoulder strength, and confidence.</p>
+                    </div>
+
+                    <!-- Month 5-6 -->
+                    <div
+                        style="margin-bottom: 40px; padding-bottom: 20px; border-bottom: 1px solid rgba(255, 107, 53, 0.2);">
+                        <time style="color: var(--accent-orange); font-weight: 600;">Month 5-6</time>
+                        <h4 style="font-size: 1.3rem; color: var(--text-light); margin-top: 10px; margin-bottom: 8px;">
+                            Handstand Pushup Achievement</h4>
+                        <p style="color: rgba(232, 232, 232, 0.7);">First handstand pushup! Combined vertical strength
+                            with body control. Huge confidence boost!</p>
+                    </div>
+
+                    <!-- Month 7-8 -->
+                    <div
+                        style="margin-bottom: 40px; padding-bottom: 20px; border-bottom: 1px solid rgba(255, 107, 53, 0.2);">
+                        <time style="color: var(--accent-orange); font-weight: 600;">Month 7-8</time>
+                        <h4 style="font-size: 1.3rem; color: var(--text-light); margin-top: 10px; margin-bottom: 8px;">
+                            Muscle Up Unlocked</h4>
+                        <p style="color: rgba(232, 232, 232, 0.7);">The explosive muscle up! Required months of pull-up
+                            and dip progressions. Worth every rep!</p>
+                    </div>
+
+                    <!-- Month 9-10 -->
+                    <div
+                        style="margin-bottom: 40px; padding-bottom: 20px; border-bottom: 1px solid rgba(255, 107, 53, 0.2);">
+                        <time style="color: var(--accent-orange); font-weight: 600;">Month 9-10</time>
+                        <h4 style="font-size: 1.3rem; color: var(--text-light); margin-top: 10px; margin-bottom: 8px;">
+                            Front Lever Progress</h4>
+                        <p style="color: rgba(232, 232, 232, 0.7);">Intense core and back training. Achieved tuck front
+                            lever, building towards full front lever.</p>
+                    </div>
+
+                    <!-- Month 11-12 -->
+                    <div style="margin-bottom: 40px;">
+                        <time style="color: var(--accent-orange); font-weight: 600;">Month 11-12</time>
+                        <h4 style="font-size: 1.3rem; color: var(--text-light); margin-top: 10px; margin-bottom: 8px;">
+                            Straddle Planche Mastered</h4>
+                        <p style="color: rgba(232, 232, 232, 0.7);">The ultimate achievement! Straddle planche hold.
+                            Proof of dedication and consistency.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                style="margin-top: 4rem; padding: 30px; background: linear-gradient(135deg, rgba(255, 107, 53, 0.1), rgba(0, 255, 136, 0.05)); border-radius: 15px; border: 1px solid rgba(255, 107, 53, 0.2);">
+                <h3 style="color: var(--accent-orange); margin-bottom: 15px; font-size: 1.3rem;">Key Lessons</h3>
+                <ul style="color: rgba(232, 232, 232, 0.8); line-height: 2; list-style: none;">
+                    <li>💪 Consistency beats intensity - train smart, not just hard</li>
+                    <li>🧠 Patience is key - skills take time to develop</li>
+                    <li>📊 Progressive overload - increase difficulty gradually</li>
+                    <li>🤝 Community matters - training with others keeps you motivated</li>
+                    <li>🎯 Form over ego - perfect technique builds lasting strength</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs/Courses Section -->
+    <section id="programs" class="bg-gray-950">
+        <h2 class="section-title">Training Programs</h2>
+        <div class="max-w-1200px mx-auto">
+            <p style="text-align: center; color: rgba(232, 232, 232, 0.8); margin-bottom: 3rem; font-size: 1.1rem;">
+                Learn from my personal journey. Master calisthenics step-by-step.</p>
+            <div class="skills-grid">
+                <!-- Beginner Program -->
+                <div class="skill-card" style="position: relative;">
+                    <div
+                        style="position: absolute; top: 20px; right: 20px; background: var(--accent-orange); color: #000; padding: 8px 16px; border-radius: 50px; font-weight: 600; font-size: 0.9rem;">
+                        POPULAR</div>
+                    <div style="padding: 30px;">
+                        <h3 style="font-size: 1.8rem; color: var(--accent-orange); margin-bottom: 10px;">Beginner</h3>
+                        <div
+                            style="font-size: 2.5rem; font-weight: 800; color: var(--accent-green); margin-bottom: 20px;">
+                            ₹499<span style="font-size: 1rem; color: rgba(232, 232, 232, 0.6);">/2month</span></div>
+                        <ul style="color: rgba(232, 232, 232, 0.8); margin-bottom: 25px; line-height: 2;">
+                            <li>✅ Push-up progression (5 levels)</li>
+                            <li>✅ Handstand preparation</li>
+                            <li>✅ Core strengthening</li>
+                            <li>✅ 8 weeks structured plan</li>
+                            <li>✅ Video tutorials</li>
+                        </ul>
+                        <button class="btn btn-primary enroll-btn" data-plan="Beginner" data-price="499"
+                            data-duration="2 month" style="width: 100%;">Enroll Now</button>
+                    </div>
+                </div>
+
+                <!-- Intermediate Program -->
+                <div class="skill-card">
+                    <div style="padding: 30px;">
+                        <h3 style="font-size: 1.8rem; color: var(--accent-orange); margin-bottom: 10px;">Intermediate
+                        </h3>
+                        <div
+                            style="font-size: 2.5rem; font-weight: 800; color: var(--accent-green); margin-bottom: 20px;">
+                            ₹999<span style="font-size: 1rem; color: rgba(232, 232, 232, 0.6);">/ 3 month</span></div>
+                        <ul style="color: rgba(232, 232, 232, 0.8); margin-bottom: 25px; line-height: 2;">
+                            <li>✅ Handstand mastery</li>
+                            <li>✅ Muscle up foundation</li>
+                            <li>✅ Dips & pull-ups</li>
+                            <li>✅ 12 weeks structured plan</li>
+                            <li>✅ Progress tracking</li>
+                        </ul>
+                        <button class="btn btn-primary enroll-btn" data-plan="Intermediate" data-price="999"
+                            data-duration="3 month" style="width: 100%;">Enroll Now</button>
+                    </div>
+                </div>
+
+                <!-- Advanced Program -->
+                <div class="skill-card">
+                    <div
+                        style="position: absolute; top: 20px; right: 20px; background: linear-gradient(135deg, var(--accent-green), #00ffaa); color: #000; padding: 8px 16px; border-radius: 50px; font-weight: 600; font-size: 0.85rem; z-index: 10;">
+                        🏆 1-ON-1 COACHING</div>
+                    <div style="padding: 30px;">
+                        <h3 style="font-size: 1.8rem; color: var(--accent-orange); margin-bottom: 10px;">Advanced</h3>
+                        <div
+                            style="font-size: 2.5rem; font-weight: 800; color: var(--accent-green); margin-bottom: 20px;">
+                            ₹1,499<span style="font-size: 1rem; color: rgba(232, 232, 232, 0.6);">/5month</span></div>
+                        <ul style="color: rgba(232, 232, 232, 0.8); margin-bottom: 25px; line-height: 2;">
+                            <li>✅ Muscle up mastery</li>
+                            <li>✅ Front lever progressions</li>
+                            <li>✅ Straddle planche</li>
+                            <li>✅ 20 weeks elite plan</li>
+                            <li>✅ 1-on-1 form review & correction </li>
+
+                        </ul>
+                        <button class="btn btn-primary enroll-btn" data-plan="Advanced" data-price="1499"
+                            data-duration="5 month" style="width: 100%;">Enroll Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <h2 class="section-title">Gallery & Videos</h2>
+        <p style="text-align: center; color: rgba(232, 232, 232, 0.8); margin-bottom: 3rem; font-size: 1.1rem;">Check
+            out my progress and latest training videos</p>
+
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <!-- YouTube Embeds -->
+            <h3 style="font-size: 1.8rem; color: var(--accent-green); margin-bottom: 2rem; text-align: center;">Latest
+                Videos</h3>
+            <div class="skills-grid" style="margin-bottom: 4rem;">
+                <div
+                    style="background: var(--card-bg); border-radius: 15px; overflow: hidden; border: 1px solid rgba(255, 107, 53, 0.2);">
+
+                    <iframe width="95%" height="315"
+                        src="https://www.youtube.com/embed/7gs2zEI_IoA?si=3T3eYYNrkPHrVx9g" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div style="padding: 20px;">
+                        <h4 style="color: var(--accent-orange); margin-bottom: 8px;">Gym VS Calisthenics</h4>
+                        <p style="color: rgba(232, 232, 232, 0.7); font-size: 0.9rem;">Gym VS Calisthenics, which one is better for you?    </p>
+                    </div>
+                </div>
+
+                <div
+                    style="background: var(--card-bg); border-radius: 15px; overflow: hidden; border: 1px solid rgba(255, 107, 53, 0.2);">
+                    <iframe width="100%" height="315"
+                        src="https://www.youtube.com/embed/55S0u26WfZQ?si=t3vvTVYNBNcNN39L" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div style="padding: 20px;">
+                        <h4 style="color: var(--accent-orange); margin-bottom: 8px;">Pushups from beginner to advanced  </h4>
+                        <p style="color: rgba(232, 232, 232, 0.7); font-size: 0.9rem;">can't do even one pushup? this video is for you  </p>
+                    </div>
+                </div>
+
+                <div
+                    style="background: var(--card-bg); border-radius: 15px; overflow: hidden; border: 1px solid rgba(255, 107, 53, 0.2);">
+                    <iframe width="100%" height="315"
+                        src="https://www.youtube.com/embed/kU7h6nG5ML0?si=cmcmPkJKmiW8N63J" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div style="padding: 20px;">
+                        <h4 style="color: var(--accent-orange); margin-bottom: 8px;">Full body workout at Home </h4>
+                        <p style="color: rgba(232, 232, 232, 0.7); font-size: 0.9rem;"> No equipment needed, just your bodyweight</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image Gallery Removed - No duplicate photos -->
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="bg-gray-950">
+        <h2 class="section-title">Success Stories</h2>
+        <p style="text-align: center; color: rgba(232, 232, 232, 0.8); margin-bottom: 3rem; font-size: 1.1rem;">See what
+            my students have achieved</p>
+        <div class="skills-grid">
+            <!-- Testimonial 1 -->
+            <div class="skill-card">
+                <div style="padding: 30px;">
+                    <div style="display: flex; align-items: center; margin-bottom: 20px;">
+                        <div
+                            style="width: 50px; height: 50px; background: linear-gradient(135deg, var(--accent-orange), var(--accent-green)); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #000; font-weight: 700; font-size: 1.2rem; margin-right: 15px;">
+                            AR</div>
+                        <div>
+                            <h4 style="color: var(--accent-orange); font-weight: 700; margin-bottom: 5px;">Arjun Sharma
+                            </h4>
+                            <p style="color: rgba(232, 232, 232, 0.6); font-size: 0.9rem;">3 months in program</p>
+                        </div>
+                    </div>
+                    <p style="color: rgba(232, 232, 232, 0.8); line-height: 1.6; margin-bottom: 15px;">"From zero to my
+                        first handstand in 2 months! Ritesh's structured approach and form correction videos changed
+                        everything for me."</p>
+                    <div style="color: var(--accent-green); font-size: 1.1rem;">⭐⭐⭐⭐⭐</div>
+                </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="skill-card">
+                <div style="padding: 30px;">
+                    <div style="display: flex; align-items: center; margin-bottom: 20px;">
+                        <div
+                            style="width: 50px; height: 50px; background: linear-gradient(135deg, var(--accent-orange), var(--accent-green)); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #000; font-weight: 700; font-size: 1.2rem; margin-right: 15px;">
+                            PK</div>
+                        <div>
+                            <h4 style="color: var(--accent-orange); font-weight: 700; margin-bottom: 5px;">Priya Kumar
+                            </h4>
+                            <p style="color: rgba(232, 232, 232, 0.6); font-size: 0.9rem;">6 months in program</p>
+                        </div>
+                    </div>
+                    <p style="color: rgba(232, 232, 232, 0.8); line-height: 1.6; margin-bottom: 15px;">"I achieved my
+                        muscle up dream! The progression exercises are logical and effective. Best investment in
+                        fitness!"</p>
+                    <div style="color: var(--accent-green); font-size: 1.1rem;">⭐⭐⭐⭐⭐</div>
+                </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="skill-card">
+                <div style="padding: 30px;">
+                    <div style="display: flex; align-items: center; margin-bottom: 20px;">
+                        <div
+                            style="width: 50px; height: 50px; background: linear-gradient(135deg, var(--accent-orange), var(--accent-green)); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #000; font-weight: 700; font-size: 1.2rem; margin-right: 15px;">
+                            RG</div>
+                        <div>
+                            <h4 style="color: var(--accent-orange); font-weight: 700; margin-bottom: 5px;">Rahul Gupta
+                            </h4>
+                            <p style="color: rgba(232, 232, 232, 0.6); font-size: 0.9rem;">Advanced program student</p>
+                        </div>
+                    </div>
+                    <p style="color: rgba(232, 232, 232, 0.8); line-height: 1.6; margin-bottom: 15px;">"The 1-on-1 form
+                        review sessions are game-changing. Finally did my front lever! Ritesh is incredibly supportive."
+                    </p>
+                    <div style="color: var(--accent-green); font-size: 1.1rem;">⭐⭐⭐⭐⭐</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Free 1-Month Guide Section -->
+    <section id="guide">
+        <h2 class="section-title">Get FREE 1-Month Calisthenics Guide</h2>
+        <div class="max-w-xl mx-auto px-4">
+            <div style="background: rgba(255, 107, 53, 0.1); border: 2px solid var(--accent-orange); border-radius: 20px;"
+                class="p-8 md:p-12 text-center">
+                <h3 style="color: var(--accent-orange); font-size: 1.8rem; margin-bottom: 15px;">🎁 Beginner-Friendly
+                    Roadmap</h3>
+                <p style="color: rgba(232, 232, 232, 0.8); margin-bottom: 25px; line-height: 1.8; font-size: 1.05rem;">
+                    Get a complete 30-day structured plan including:
+                </p>
+                <ul style="color: rgba(232, 232, 232, 0.8); margin-bottom: 35px; line-height: 2.2; list-style: none; text-align: left;"
+                    class="max-w-xs mx-auto">
+                    <li>✅ Daily workout routines</li>
+                    <li>✅ Progressive exercises</li>
+                    <li>✅ Nutrition basics</li>
+                    <li>✅ Form tips & common mistakes</li>
+                    <li>✅ Progress tracking</li>
+                </ul>
+
+                <a href="calisthenics_guide.txt" download
+                    class="btn btn-primary block w-full py-4 text-center text-lg font-bold">
+                    📥 Download Free Guide (TXT)
+                </a>
+
+                <p style="color: rgba(232, 232, 232, 0.5); font-size: 0.85rem; margin-top: 20px;">
+                    Instant download. No email required.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="bg-gray-950">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div style="max-width: 800px; margin: 0 auto;">
+            <!-- FAQ Item 1 -->
+            <div
+                style="margin-bottom: 20px; border: 1px solid rgba(255, 107, 53, 0.2); border-radius: 12px; overflow: hidden;">
+                <div style="padding: 20px; background: rgba(255, 107, 53, 0.05); cursor: pointer; display: flex; justify-content: space-between; align-items: center;"
+                    onclick="this.parentElement.querySelector('.faq-answer').style.display = this.parentElement.querySelector('.faq-answer').style.display === 'none' ? 'block' : 'none'; this.querySelector('.faq-icon').style.transform = this.querySelector('.faq-icon').style.transform === 'rotate(180deg)' ? 'rotate(0deg)' : 'rotate(180deg)'">
+                    <h4 style="color: var(--accent-orange); font-weight: 700; margin: 0;">Do I need prior experience?
+                    </h4>
+                    <span class="faq-icon"
+                        style="color: var(--accent-green); font-size: 1.5rem; transition: transform 0.3s;">▼</span>
+                </div>
+                <div class="faq-answer"
+                    style="padding: 20px; display: none; color: rgba(232, 232, 232, 0.8); line-height: 1.6;">
+                    No! The beginner program is designed for complete beginners. We start with basic progressions and
+                    gradually increase difficulty.
+                </div>
+            </div>
+
+            <!-- FAQ Item 2 -->
+            <div
+                style="margin-bottom: 20px; border: 1px solid rgba(255, 107, 53, 0.2); border-radius: 12px; overflow: hidden;">
+                <div style="padding: 20px; background: rgba(255, 107, 53, 0.05); cursor: pointer; display: flex; justify-content: space-between; align-items: center;"
+                    onclick="this.parentElement.querySelector('.faq-answer').style.display = this.parentElement.querySelector('.faq-answer').style.display === 'none' ? 'block' : 'none'; this.querySelector('.faq-icon').style.transform = this.querySelector('.faq-icon').style.transform === 'rotate(180deg)' ? 'rotate(0deg)' : 'rotate(180deg)'">
+                    <h4 style="color: var(--accent-orange); font-weight: 700; margin: 0;">How long does it take to
+                        master a skill?</h4>
+                    <span class="faq-icon"
+                        style="color: var(--accent-green); font-size: 1.5rem; transition: transform 0.3s;">▼</span>
+                </div>
+                <div class="faq-answer"
+                    style="padding: 20px; display: none; color: rgba(232, 232, 232, 0.8); line-height: 1.6;">
+                    It depends on your consistency. Handstand: 2-3 months. Muscle Up: 4-6 months. Advanced skills like
+                    planche: 8-12 months. Consistency matters more than intensity!
+                </div>
+            </div>
+
+            <!-- FAQ Item 3 -->
+            <div
+                style="margin-bottom: 20px; border: 1px solid rgba(255, 107, 53, 0.2); border-radius: 12px; overflow: hidden;">
+                <div style="padding: 20px; background: rgba(255, 107, 53, 0.05); cursor: pointer; display: flex; justify-content: space-between; align-items: center;"
+                    onclick="this.parentElement.querySelector('.faq-answer').style.display = this.parentElement.querySelector('.faq-answer').style.display === 'none' ? 'block' : 'none'; this.querySelector('.faq-icon').style.transform = this.querySelector('.faq-icon').style.transform === 'rotate(180deg)' ? 'rotate(0deg)' : 'rotate(180deg)'">
+                    <h4 style="color: var(--accent-orange); font-weight: 700; margin: 0;">What's included in the
+                        advanced program?</h4>
+                    <span class="faq-icon"
+                        style="color: var(--accent-green); font-size: 1.5rem; transition: transform 0.3s;">▼</span>
+                </div>
+                <div class="faq-answer"
+                    style="padding: 20px; display: none; color: rgba(232, 232, 232, 0.8); line-height: 1.6;">
+                    12-week elite plan, all tutorial videos, progress tracking, 1-on-1 form review sessions, and direct
+                    messaging support. Personalized coaching for your goals!
+                </div>
+            </div>
+
+            <!-- FAQ Item 4 -->
+            <div
+                style="margin-bottom: 20px; border: 1px solid rgba(255, 107, 53, 0.2); border-radius: 12px; overflow: hidden;">
+                <div style="padding: 20px; background: rgba(255, 107, 53, 0.05); cursor: pointer; display: flex; justify-content: space-between; align-items: center;"
+                    onclick="this.parentElement.querySelector('.faq-answer').style.display = this.parentElement.querySelector('.faq-answer').style.display === 'none' ? 'block' : 'none'; this.querySelector('.faq-icon').style.transform = this.querySelector('.faq-icon').style.transform === 'rotate(180deg)' ? 'rotate(0deg)' : 'rotate(180deg)'">
+                    <h4 style="color: var(--accent-orange); font-weight: 700; margin: 0;">Do you offer 1-on-1 coaching?
+                    </h4>
+                    <span class="faq-icon"
+                        style="color: var(--accent-green); font-size: 1.5rem; transition: transform 0.3s;">▼</span>
+                </div>
+                <div class="faq-answer"
+                    style="padding: 20px; display: none; color: rgba(232, 232, 232, 0.8); line-height: 1.6;">
+                    Yes! The Advanced program includes 1-on-1 form review sessions. You can record your form and I'll
+                    give detailed feedback for perfect technique.
+                </div>
+            </div>
+
+            <!-- FAQ Item 5 -->
+            <div style="border: 1px solid rgba(255, 107, 53, 0.2); border-radius: 12px; overflow: hidden;">
+                <div style="padding: 20px; background: rgba(255, 107, 53, 0.05); cursor: pointer; display: flex; justify-content: space-between; align-items: center;"
+                    onclick="this.parentElement.querySelector('.faq-answer').style.display = this.parentElement.querySelector('.faq-answer').style.display === 'none' ? 'block' : 'none'; this.querySelector('.faq-icon').style.transform = this.querySelector('.faq-icon').style.transform === 'rotate(180deg)' ? 'rotate(0deg)' : 'rotate(180deg)'">
+                    <h4 style="color: var(--accent-orange); font-weight: 700; margin: 0;">Money-back guarantee?</h4>
+                    <span class="faq-icon"
+                        style="color: var(--accent-green); font-size: 1.5rem; transition: transform 0.3s;">▼</span>
+                </div>
+                <div class="faq-answer"
+                    style="padding: 20px; display: none; color: rgba(232, 232, 232, 0.8); line-height: 1.6;">
+                    Absolutely! If you're not satisfied with the first 14 days, get a full refund. No questions asked.
+                    Your satisfaction is my priority.
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-gray-950">
+        <h2 class="section-title">Let's Connect</h2>
+        <div class="max-w-2xl mx-auto">
+            <div class="social-links">
+                <a href="https://instagram.com" target="_blank" title="Instagram" class="social-link">📱</a>
+                <a href="https://youtube.com/@fitnesswithritesh" target="_blank" title="YouTube"
+                    class="social-link">▶️</a>
+                <a href="https://twitter.com" target="_blank" title="Twitter" class="social-link">𝕏</a>
+                <a href="mailto:contact@fitnesswithritesh.com" title="Email" class="social-link">✉️</a>
+            </div>
+            <p style="color: rgba(232, 232, 232, 0.7); margin-bottom: 2rem;">Follow me on social media for daily
+                calisthenics tips and training motivation.</p>
+            <form class="flex flex-col gap-4" action="https://formspree.io/f/xojppjng" method="POST">
+                <input type="text" name="name" placeholder="Your Name"
+                    class="px-4 py-3 rounded-lg bg-gray-900 border border-orange-500 border-opacity-30 text-white placeholder-gray-500 focus:outline-none focus:border-orange-500"
+                    required>
+                <input type="email" name="email" placeholder="Your Email"
+                    class="px-4 py-3 rounded-lg bg-gray-900 border border-orange-500 border-opacity-30 text-white placeholder-gray-500 focus:outline-none focus:border-orange-500"
+                    required>
+                <textarea placeholder="Your Message" name="message" rows="5"
+                    class="px-4 py-3 rounded-lg bg-gray-900 border border-orange-500 border-opacity-30 text-white placeholder-gray-500 focus:outline-none focus:border-orange-500"></textarea>
+                <button type="submit" class="btn btn-primary mt-2">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Fitness with Ritesh. All rights reserved. 💪</p>
+        <p style="margin-top: 10px; font-size: 0.85rem;">Crafted with passion | Built for calisthenics enthusiasts</p>
+    </footer>
+
+    <!-- Payment Modal -->
+    <div id="paymentModal" class="modal-overlay">
+        <div class="modal-content glassmorphism">
+            <button class="close-modal">&times;</button>
+            <div class="modal-header">
+                <h3 id="modalPlanName">Beginner Program</h3>
+                <p id="modalPlanPrice">₹499</p>
+            </div>
+            <div class="modal-body">
+                <div class="checkout-details">
+                    <div class="detail-item">
+                        <span>Duration:</span>
+                        <span id="modalPlanDuration">2 Months</span>
+                    </div>
+                    <div class="detail-item">
+                        <span>Access:</span>
+                        <span>Lifetime</span>
+                    </div>
+                </div>
+                <div class="payment-options">
+                    <p class="option-title">Choose Payment Method</p>
+                    <div class="payment-grid">
+                        <button class="payment-method active" data-method="upi">
+                            <i class="fas fa-mobile-screen-button"></i>
+                            <span>UPI (PhonePe/GPay)</span>
+                        </button>
+                        <button class="payment-method" data-method="card">
+                            <i class="fas fa-credit-card"></i>
+                            <span>Card</span>
+                        </button>
+                        <button class="payment-method" data-method="netbanking">
+                            <i class="fas fa-building-columns"></i>
+                            <span>Net Banking</span>
+                        </button>
+                    </div>
+                </div>
+                <div id="paymentFeedback" class="payment-feedback hidden">
+                    <div class="spinner"></div>
+                    <p>Securing connection...</p>
+                </div>
+                <button id="payNowBtn" class="btn btn-primary w-full py-4 text-lg font-bold mt-6">
+                    Pay Now ₹<span id="btnPrice">499</span>
+                </button>
+            </div>
+            <p class="modal-footer-text">
+                <i class="fas fa-lock"></i> Secured by SSL Encryption
+            </p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
