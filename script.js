@@ -108,6 +108,26 @@ window.addEventListener('scroll', () => {
     lastScrollTop = scrollTop;
 }, false);
 
+// ==================== SCROLL SPY ====================
+const sectionsArr = document.querySelectorAll('section[id]');
+const navLinksArr = document.querySelectorAll('nav a');
+
+sectionsArr.forEach(section => {
+    ScrollTrigger.create({
+        trigger: section,
+        start: 'top 100px', // Adjust offset to match sticky nav height
+        end: 'bottom 100px',
+        onToggle: self => {
+            if (self.isActive) {
+                const id = section.getAttribute('id');
+                navLinksArr.forEach(link => {
+                    link.classList.toggle('active', link.getAttribute('href') === `#${id}`);
+                });
+            }
+        }
+    });
+});
+
 // ==================== SMOOTH SCROLL ====================
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {

@@ -39,7 +39,8 @@ nav a {
     position: relative;
 }
 
-nav a:hover {
+nav a:hover,
+nav a.active {
     color: var(--accent-orange);
 }
 
@@ -54,7 +55,8 @@ nav a::after {
     transition: width 0.2s ease;
 }
 
-nav a:hover::after {
+nav a:hover::after,
+nav a.active::after {
     width: 100%;
 }
 
