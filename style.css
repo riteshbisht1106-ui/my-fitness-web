@@ -93,8 +93,9 @@ nav a.active::after {
     background-position: center top;
     opacity: 0.75;
     z-index: 0;
+    height: 100vh;
     will-change: transform;
-    filter: brightness(1.0) contrast(1.0) saturate(1.0);
+    filter: brightness(1.4) contrast(1.0) saturate(1.0);
 }
 
 .hero-content {
