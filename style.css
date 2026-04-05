@@ -93,7 +93,7 @@ nav a.active::after {
     background-position: center top;
     opacity: 0.75;
     z-index: 0;
-    height: 100vh;
+
     will-change: transform;
     filter: brightness(1.4) contrast(1.0) saturate(1.0);
 }
@@ -908,6 +908,11 @@ body {
         height: auto;
         min-height: 80vh;
         padding: 60px 20px;
+    }
+
+    .hero-bg {
+        width: 100%;
+        background-position: center center;
     }
 
     nav {
