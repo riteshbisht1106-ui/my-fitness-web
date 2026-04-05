@@ -163,7 +163,7 @@ nav a.active::after {
     background: rgba(255, 255, 255, 0.08);
     border: 2px solid transparent;
     border-image: linear-gradient(135deg, var(--accent-orange), var(--accent-green)) 1;
-    border-radius: 12px;
+    border-radius: 50px;
     color: var(--text-light);
     font-weight: 700;
     font-size: 0.9rem;
@@ -216,7 +216,7 @@ nav a.active::after {
     background: linear-gradient(135deg, var(--accent-orange), var(--accent-green));
     opacity: 0;
     transition: opacity 0.3s ease;
-    border-radius: 12px;
+    border-radius: 50px;
     z-index: -1;
 }
 
@@ -368,7 +368,7 @@ nav a.active::after {
 .cta-btn {
     display: inline-block;
     padding: 14px 40px;
-    border-radius: 12px;
+    border-radius: 50px;
     font-weight: 700;
     text-decoration: none;
     transition: all 0.3s ease;
@@ -408,7 +408,7 @@ nav a.active::after {
 .btn {
     display: inline-block;
     padding: 14px 40px;
-    border-radius: 12px;
+    border-radius: 50px;
     font-weight: 600;
     text-decoration: none;
     transition: all 0.3s ease;

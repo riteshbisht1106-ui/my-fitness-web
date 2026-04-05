@@ -128,32 +128,6 @@ sectionsArr.forEach(section => {
     });
 });
 
-// ==================== MOBILE MENU TOGGLE ====================
-const menuToggle = document.getElementById('menuToggle');
-const closeMenu = document.getElementById('closeMenu');
-const mobileMenu = document.getElementById('mobileMenu');
-const mobileLinks = document.querySelectorAll('.mobile-link');
-
-if (menuToggle && mobileMenu) {
-    menuToggle.addEventListener('click', () => {
-        mobileMenu.classList.remove('translate-x-full');
-        document.body.style.overflow = 'hidden';
-    });
-}
-
-if (closeMenu && mobileMenu) {
-    const closeMobileMenu = () => {
-        mobileMenu.classList.add('translate-x-full');
-        document.body.style.overflow = '';
-    };
-
-    closeMenu.addEventListener('click', closeMobileMenu);
-
-    mobileLinks.forEach(link => {
-        link.addEventListener('click', closeMobileMenu);
-    });
-}
-
 // ==================== SMOOTH SCROLL ====================
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
