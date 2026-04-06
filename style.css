@@ -46,7 +46,10 @@ nav a {
 
 nav a:hover,
 nav a.active {
-    color: var(--accent-orange);
+    background: linear-gradient(135deg, var(--accent-orange), var(--accent-green));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 nav a::after {
@@ -112,20 +115,22 @@ nav a.active::after {
 
     .nav-links a {
         font-size: 1.1rem;
-        width: 100%;
+        
         text-align: center;
         padding: 10px 0;
     }
 
     .nav-links a::after {
-        display: none;
-        /* Hide hover underline on mobile to keep it clean */
+        display: block;
+        /* Show underline on mobile too */
+        bottom: 2px;
+        background: linear-gradient(90deg, var(--accent-orange), var(--accent-green));
     }
 
     /* Hamburger Animation to X */
     .hamburger.active span:nth-child(1) {
         transform: translateY(9px) rotate(45deg);
-        background: var(--accent-orange);
+        background: linear-gradient(135deg, var(--accent-orange), var(--accent-green));
     }
 
     .hamburger.active span:nth-child(2) {
@@ -134,7 +139,7 @@ nav a.active::after {
 
     .hamburger.active span:nth-child(3) {
         transform: translateY(-9px) rotate(-45deg);
-        background: var(--accent-orange);
+        background: linear-gradient(135deg, var(--accent-orange), var(--accent-green));
     }
 }
 
@@ -348,8 +353,8 @@ nav a.active::after {
 }
 
 .social-icon-neon .icon-wrapper {
-    width: 55px;
-    height: 55px;
+    width: 45px;
+    height: 45px;
     display: flex;
     align-items: center;
     justify-content: center;
