@@ -88,21 +88,40 @@ cards.forEach((card, index) => {
     });
 });
 
-// ==================== NAVBAR SCROLL EFFECT ====================
+// ==================== NAVBAR SCROLL & MOBILE MENU ====================
 let lastScrollTop = 0;
 const nav = document.querySelector('nav');
-let scrollTimeout;
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('nav-links');
+const mobileLinks = document.querySelectorAll('.nav-links a');
+
+// Hamburger Toggle
+if (hamburger && navLinks) {
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navLinks.classList.toggle('active');
+    });
+}
+
+// Close menu when link is clicked
+mobileLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navLinks.classList.remove('active');
+    });
+});
 
 window.addEventListener('scroll', () => {
-    clearTimeout(scrollTimeout);
     let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
     if (scrollTop > 50) {
         nav.style.borderBottomColor = 'rgba(255, 107, 53, 0.4)';
         nav.style.boxShadow = '0 5px 20px rgba(255, 107, 53, 0.1)';
+        nav.style.background = 'rgba(15, 15, 15, 1)';
     } else {
-        nav.style.borderBottomColor = 'rgba(255, 107, 53, 0.1)';
+        nav.style.borderBottomColor = 'rgba(255, 107, 53, 0.2)';
         nav.style.boxShadow = 'none';
+        nav.style.background = 'rgba(15, 15, 15, 0.98)';
     }
 
     lastScrollTop = scrollTop;
